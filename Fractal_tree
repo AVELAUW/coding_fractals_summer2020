@@ -26,7 +26,7 @@ pen = turtle.Turtle()
 pen.color(?) 
 # The code below determines the pen thickness
 pen.pensize(?)     
-# The code below hides the pointer while drawing
+# The code below hides the pen while drawing
 pen.hideturtle() 
 # The code below determines the pen's draw speed
 pen.speed(?)   
