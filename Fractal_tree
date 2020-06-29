@@ -1,18 +1,42 @@
+# The code below imports the 'turtle' graphics library
 import turtle
-MINIMUM_BRANCH_LENGTH = 5
-def build_tree(t, branch_length, shorten_by, angle):
-  if branch_length > MINIMUM_BRANCH_LENGTH:
-    t.forward(branch_length)
-    new_length = branch_length - shorten_by
-    t.left(angle)
-    build_tree(t, new_length, shorten_by, angle)
-    t.right(angle * 2)
-    build_tree(t, new_length, shorten_by, angle)
-    t.left(angle)
-    t.backward(branch_length)
-tree = turtle.Turtle()
-tree.hideturtle()
-tree.setheading(90)
-tree.color('green')
-build_tree(tree, 50, 5, 30)
-turtle.mainloop()
+
+# The code below is an example of a black box 
+def createTree(plist, length, angle, factor):
+    """ 
+    1. plist:  A list of pens
+    2. length: The length of a branch
+    3. angle:  Half of the angle between 2 branches
+    4. factor: Factor by which branches are shortened from level to level.
+    """
+    if length > 5: 
+        lst = []
+        for pens in plist:
+            pens.forward(length)
+            temp = pens.clone()
+            pens.left(angle)
+            temp.right(angle)
+            lst.append(pens)
+            lst.append(temp)
+        createTree(lst, length*factor, angle, factor)
+
+# The code below creates a pen
+pen = turtle.Turtle() 
+# The code below determines the pen color
+pen.color("green") 
+# The code below determines the pen thickness
+pen.pensize(4)     
+# The code below 
+pen.hideturtle() 
+# The code below determines the pen's draw speed
+pen.speed(100)   
+# The code below changes the angle the pen points to the left 
+pen.left(90)     
+# The code below lifts the pen so it doesn't draw
+pen.penup()      
+# The code below moves the pen to the center of the screen
+pen.goto(0,-200) 
+# The code below drops the pen so that it will draw
+pen.pendown()    
+
+tree = createTree([pen], 100, 40, 0.65)
