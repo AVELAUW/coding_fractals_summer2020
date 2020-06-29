@@ -2,7 +2,7 @@
 import turtle
 
 # The code below is an example of a black box 
-def createTree(plist, length, angle, factor):
+def createTree(?, ?, ?, ?):
     """ 
     1. plist:  A list of pens
     2. length: The length of a branch
@@ -23,19 +23,19 @@ def createTree(plist, length, angle, factor):
 # The code below creates a pen
 pen = turtle.Turtle() 
 # The code below determines the pen color
-pen.color("green") 
+pen.color(?) 
 # The code below determines the pen thickness
-pen.pensize(4)     
+pen.pensize(?)     
 # The code below 
 pen.hideturtle() 
 # The code below determines the pen's draw speed
-pen.speed(100)   
+pen.speed(?)   
 # The code below changes the angle the pen points to the left 
-pen.left(90)     
+pen.left(?)     
 # The code below lifts the pen so it doesn't draw
 pen.penup()      
 # The code below moves the pen to the center of the screen
-pen.goto(0,-200) 
+pen.goto(?) 
 # The code below drops the pen so that it will draw
 pen.pendown()    
 
