@@ -1,6 +1,7 @@
+# The code below imports the 'turtle' graphics library
 import turtle
 
-def koch_curve(t, iterations, length, shortening_factor, angle):
+def createKochSnowflake(t, iterations, length, shortening_factor, angle):
   if iterations == 0:
     t.forward(length)
   else:
@@ -23,7 +24,8 @@ pen.pensize(2)
 # The code below hides the pen while drawing
 pen.hideturtle() 
 # The code below determines the pen's draw speed
-pen.speed(100) 
+pen.speed(100)
+
 for i in range(3):
-  koch_curve(pen, 4, 150, 3, 60)
+  createKochSnowflake(pen, 4, 150, 3, 60)
   pen.right(120)
