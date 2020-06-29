@@ -3,7 +3,7 @@ import turtle
 
 # The code below is an example of a black box 
 def getMid(p1,p2):
-    return ( (p1[0]+p2[0]) / 2, (p1[1] + p2[1]) / 2) #find midpoint
+    return ((p1[0]+p2[0]) / 2, (p1[1] + p2[1]) / 2) #find midpoint
 
 def createTriangle(points,depth):
     pen.penup()
@@ -32,6 +32,6 @@ pen.hideturtle()
 # The code below determines the pen's draw speed
 pen.speed(100) 
 # The below code defines the size of our triangle
-points = [[-175,-125],[0,175],[175,-125]] 
+points = [[-180,-130],[0,180],[180,-130]] 
 
-createTriangle(points,5)
+createTriangle(points,4)
