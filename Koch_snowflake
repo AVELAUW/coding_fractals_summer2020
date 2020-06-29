@@ -14,10 +14,16 @@ def koch_curve(t, iterations, length, shortening_factor, angle):
     t.left(angle)
     koch_curve(t, iterations, length, shortening_factor, angle)
 
-t = turtle.Turtle()
-t.hideturtle()
+# The code below creates a pen
+pen = turtle.Turtle()
+# The code below determines the pen color
+pen.color("blue") 
+# The code below determines the pen thickness
+pen.pensize(2)     
+# The code below hides the pen while drawing
+pen.hideturtle() 
+# The code below determines the pen's draw speed
+pen.speed(100) 
 for i in range(3):
-  koch_curve(t, 4, 200, 3, 60)
-  t.right(120)
-  
-turtle.mainloop()
+  koch_curve(pen, 4, 150, 3, 60)
+  pen.right(120)
