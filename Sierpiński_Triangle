@@ -7,11 +7,11 @@ def getMid(p1,p2):
 
 def createTriangle(points,depth):
     pen.penup()
-    pen.goto(points[?][?],points[?][?])
+    pen.goto(?,?)
     pen.pendown()
-    pen.goto(points[?][?],points[?][?])
-    pen.goto(points[?][?],points[?][?])
-    pen.goto(points[?][?],points[?][?])
+    pen.goto(?,?)
+    pen.goto(?,?)
+    pen.goto(?,?)
 
     if depth>0:
         createTriangle([points[0], getMid(points[0], points[1]), getMid(points[0], points[2])],
