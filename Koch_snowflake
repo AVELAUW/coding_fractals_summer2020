@@ -1,19 +1,19 @@
 # The code below imports the 'turtle' graphics library
 import turtle
 
-def createKochSnowflake(t, iterations, length, shortening_factor, angle):
+def createKochSnowflake(pen, iterations, length, shortening_factor, angle):
   if iterations == 0:
-    t.forward(length)
+    pen.forward(length)
   else:
     iterations = iterations - 1
     length = length / shortening_factor
-    koch_curve(t, iterations, length, shortening_factor, angle)
-    t.left(angle)
-    koch_curve(t, iterations, length, shortening_factor, angle)
-    t.right(angle * 2)
-    koch_curve(t, iterations, length, shortening_factor, angle)
-    t.left(angle)
-    koch_curve(t, iterations, length, shortening_factor, angle)
+    createKochSnowflake(pen, iterations, length, shortening_factor, angle)
+    pen.left(angle)
+    createKochSnowflake(pen, iterations, length, shortening_factor, angle)
+    pen.right(angle * 2)
+    createKochSnowflake(pen, iterations, length, shortening_factor, angle)
+    pen.left(angle)
+    createKochSnowflake(pen, iterations, length, shortening_factor, angle)
 
 # The code below creates a pen
 pen = turtle.Turtle()
@@ -27,5 +27,5 @@ pen.hideturtle()
 pen.speed(100)
 
 for i in range(3):
-  createKochSnowflake(pen, 4, 150, 3, 60)
+  createKochSnowflake(pen, 4, 200, 3, 60)
   pen.right(120)
