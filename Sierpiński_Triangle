@@ -1,5 +1,5 @@
 # The code below imports the 'turtle' graphics library
-import turtle
+import ?
 
 # The code below is an example of a black box 
 def getMid(p1,p2):
@@ -7,11 +7,11 @@ def getMid(p1,p2):
 
 def createTriangle(points,depth):
     pen.penup()
-    pen.goto(points[0][0],points[0][1])
+    pen.goto(points[?][?],points[?][?])
     pen.pendown()
-    pen.goto(points[1][0],points[1][1])
-    pen.goto(points[2][0],points[2][1])
-    pen.goto(points[0][0],points[0][1])
+    pen.goto(points[?][?],points[?][?])
+    pen.goto(points[?][?],points[?][?])
+    pen.goto(points[?][?],points[?][?])
 
     if depth>0:
         createTriangle([points[0], getMid(points[0], points[1]), getMid(points[0], points[2])],
@@ -22,16 +22,16 @@ def createTriangle(points,depth):
                    depth-1)
 
 # The code below creates a pen
-pen = turtle.Turtle()
+? = turtle.Turtle()
 # The code below determines the pen color
-pen.color("blue") 
+pen.color(?) 
 # The code below determines the pen thickness
-pen.pensize(4)     
+pen.pensize(?)     
 # The code below hides the pen while drawing
 pen.hideturtle() 
 # The code below determines the pen's draw speed
-pen.speed(100) 
+pen.speed(?) 
 # The below code defines the size of our triangle
 points = [[-180,-130],[0,180],[180,-130]] 
 
-createTriangle(points,4)
+createTriangle(points,?)
