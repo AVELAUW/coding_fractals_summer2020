@@ -1,4 +1,4 @@
-# 
+# The code below imports the 'turtle' graphics library
 import turtle
 
 myPen = turtle.Turtle()
