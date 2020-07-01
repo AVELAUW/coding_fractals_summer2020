@@ -7,7 +7,7 @@ def createKochSnowflake(?, ?, ?, ?, ?):
   2. iterations: Depth of the Koch Snowflake drawn
   3. length:     The length of the starting edge 
   4. factor:     Factor by which branches are shortened from level to level
-  5. angle:      The angle of the triangle made in the Koch Snowflake pattern
+  5. angle:      Determines the angle from which the new side of the Koch Snowflake emerges
   """
   
   if iterations == 0:
