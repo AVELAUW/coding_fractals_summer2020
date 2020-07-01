@@ -35,7 +35,7 @@ pen.left(?)
 # The code below lifts the pen so it doesn't draw
 pen.penup()      
 # The code below moves the pen to the center of the screen
-pen.goto(?) 
+pen.goto(?,?)
 # The code below drops the pen so that it will draw
 pen.pendown()    
 
