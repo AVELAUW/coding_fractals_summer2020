@@ -31,7 +31,7 @@ star.pendown()
   
 # function to draw stars
 def stars(turtle, size):
-    if size <= 10:
+    if size <= 5:
         return
     else:
         for i in range(5):
