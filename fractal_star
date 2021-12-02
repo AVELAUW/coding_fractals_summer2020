@@ -7,34 +7,34 @@
 # pendown(): Start drawing.
 # left(value): It moves the turtle towards the left.
 
-# import turtle
-import turtle
+# The code below imports the 'turtle' graphics library
+import ?
   
 # initialise turtle instance
 star = turtle.Turtle()
   
 # increases the speed of turtle
-star.speed(500)
+star.speed(?)
   
 # to change the background color
-star.getscreen().bgcolor("White")
-star.color("Blue")
+star.getscreen().bgcolor(?)
+star.color(?)
   
 # stop drawing
 star.penup()
   
 # move the turtle
-star.goto((-100, 25))
+star.goto((??))
   
 # start drawing
 star.pendown()
   
 # function to draw stars
 def stars(turtle, size):
-    if size <= 5:
+    if size <= ?:
         return
     else:
-        for i in range(5):
+        for i in range(?):
             
             # moving turtle forward
             turtle.forward(size)
@@ -45,5 +45,5 @@ def stars(turtle, size):
   
   
 # calling the star function
-stars(star, 200)
+stars(?, ?)
 turtle.done()
